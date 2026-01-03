@@ -108,6 +108,25 @@
       transform: scale(1.05);
     }
 
+    /* Hidden Ingredients by default */
+    .hidden-ingredient {
+      display: none;
+    }
+
+    .benefits {
+      list-style: none;
+      margin: 30px 0;
+      padding: 0;
+    }
+    .benefits li {
+      background: #1a1a1a;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 15px;
+      border-left: 5px solid #00ff9d;
+      font-size: 18px;
+    }
+
     .final-romantic { margin: 50px auto 40px; max-width: 480px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 50px rgba(0,255,157,.5); }
     .final-romantic img { width: 100%; height: auto; display: block; border-radius: 20px; }
     .sales-proof { text-align: center; background: linear-gradient(#1a1a1a, #252525); padding: 30px; border-radius: 25px; margin: 40px 0; font-size: 20px; border: 4px solid #00ff9d; box-shadow: 0 0 40px rgba(0,255,157,.6); }
@@ -131,12 +150,14 @@
       <span id="countdown" style="font-size:26px;">Loading...</span>
     </div>
   </div>
-	 <a href="https://www.amazon.in/YOUR-PRODUCT-LINK" target="_blank" class="premium-amazon-btn" id="stickyBtn">
-	<img src="Amazon_logo.svg" alt="Amazon Logo">
-		<div class="text">
-		  <span class="main">55% OFF</span>
-		</div>
-	</a>
+  
+  <a href="https://www.amazon.in/YOUR-PRODUCT-LINK" target="_blank" class="premium-amazon-btn" id="buyBtn">
+    <img src="Amazon_logo.svg" alt="Amazon Logo">
+    <div class="text">
+      <span class="main">55% OFF</span>
+    </div>
+  </a>
+
   <!-- SALES PROOF -->
   <div class="sales-proof">
     ⭐⭐⭐⭐⭐ 4.9/5 Rating<br>
@@ -146,7 +167,7 @@
 
   <!-- BENEFITS -->
   <h2>Amazing Benefits of Durveda</h2>
-  <p style="font-size:24px; color:#ff4d4d; font-weight:bold; text-align:center;">  <p style="font-size:24px; color:#ff4d4d; font-weight:bold; text-align:center;">Enhanced performance • More confidence</p></p>
+  <p style="font-size:24px; color:#ff4d4d; font-weight:bold; text-align:center;">Enhanced performance • More confidence</p>
   <ul class="benefits">
     <li>Boost Stamina 4X – Enjoy All Night Long</li>
     <li>Strong Erection Whenever You Want</li>
@@ -186,7 +207,7 @@
 
   <!-- INGREDIENTS -->
   <h2>Powerful Ayurvedic Ingredients</h2>
-  <div class="ingredients-grid">
+  <div class="ingredients-grid" id="ingredientsGrid">
     <div class="ingredient">
       <img src="ashwagandha.jpg" alt="Ashwagandha">
       <p><strong>Ashwagandha</strong><br>Boosts Testosterone, Reduces Stress</p>
@@ -199,67 +220,70 @@
       <img src="Safed Musli.jpg" alt="Safed Musli">
       <p><strong>Safed Musli</strong><br>Increases Libido & Power</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient">
       <img src="Kaunch Beej.jfif" alt="Supports stamina">
       <p><strong>Kaunch Beej</strong><br>Improves strength & confidence</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="gokshura.jfif" alt="Gokshura">
       <p><strong>Gokshura</strong><br>Boosts power & vitality</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="yashad bhasma.webp" alt="yashad bhasma">
       <p><strong>yashad bhasma</strong><br>Supports libido & stamina</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Akarkara.jpg" alt="Akarkara">
       <p><strong>Akarkara</strong><br>Boosts sexual stamina</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Shatavari.webp" alt="Shatavari">
       <p><strong>Shatavari</strong><br>Boosts immunity & Supports sexual health</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="vidarikand.webp" alt="vidarikand">
       <p><strong>Vidarikand</strong><br>Supports muscle & bone health</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Mucuna Pruriens Seed.jpg" alt="Mucuna Pruriens">
       <p><strong>Mucuna Pruriens</strong><br>Boosts sexual health & libido</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Trikatu.jfif" alt="Trikatu">
       <p><strong>Trikatu</strong><br>Enhances bioavailability of herbs</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Jaiphal.jfif" alt="Jaiphal">
       <p><strong>Jaiphal</strong><br>Detoxifies body</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Javitri.webp" alt="Javitri">
       <p><strong>Javitri</strong><br>Boosts appetite</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="lavang.webp" alt="Lavang">
       <p><strong>Lavang</strong><br>Improves blood circulation</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Sida Cordifolia.jpg" alt="Sida Cordifolia">
       <p><strong>Sida Cordifolia</strong><br>Boosts sexual performance & stamina</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="Makardwaj.webp" alt="Makardwaj">
       <p><strong>Makardwaj</strong><br>improves overall sexual wellness</p>
     </div>
-	<div class="ingredient">
+    <div class="ingredient hidden-ingredient">
       <img src="abhrak-bhasma-500x500.webp" alt="Abhrak Bhasma">
       <p><strong>Abhrak Bhasma</strong><br>improves libido and fertility</p>
     </div>
-	<div class="ingredient">
-      <img src="Kuchla.jpg" alt="Abhrak Bhasma">
+    <div class="ingredient hidden-ingredient">
+      <img src="Kuchla.jpg" alt="Kuchla">
       <p><strong>Kuchla</strong><br>increases vigor and endurance</p>
     </div>
-    
+  </div>
+
+  <div class="load-more">
+    <button id="showAllIngredientsBtn">↓ Show All Ingredients (18 Total)</button>
   </div>
 
   <!-- REAL CUSTOMER REVIEWS WITH LOAD MORE -->
@@ -279,7 +303,6 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
     <div class="text">
       <span class="main">55% OFF</span>
-   
     </div>
   </a>
 
@@ -306,7 +329,6 @@ const allReviews = [
   { photo: "https://randomuser.me/api/portraits/men/34.jpg", name: "Arjun, Hyderabad", stars: 5, text: "Rock hard every time. Best investment!" },
   { photo: "https://randomuser.me/api/portraits/men/56.jpg", name: "Rohit, Pune", stars: 5, text: "No side effects, full natural power!" },
   { photo: "https://randomuser.me/api/portraits/men/78.jpg", name: "Deepak, Ahmedabad", stars: 5, text: "Confidence level max now!" },
-  // Add 42 more here to make 50+
 ];
 
 // Load More Logic
@@ -340,6 +362,26 @@ loadMoreBtn.onclick = () => {
   visibleReviews = nextEnd;
   if (visibleReviews >= allReviews.length) {
     loadMoreBtn.style.display = 'none';
+  }
+};
+
+// Show All Ingredients Button
+const showAllIngredientsBtn = document.getElementById('showAllIngredientsBtn');
+let ingredientsExpanded = false;
+
+showAllIngredientsBtn.onclick = () => {
+  const hiddenIngredients = document.querySelectorAll('.hidden-ingredient');
+  
+  if (!ingredientsExpanded) {
+    hiddenIngredients.forEach(ing => ing.style.display = 'block');
+    showAllIngredientsBtn.innerHTML = '↑ Show Less Ingredients';
+    ingredientsExpanded = true;
+  } else {
+    hiddenIngredients.forEach(ing => ing.style.display = 'none');
+    showAllIngredientsBtn.innerHTML = '↓ Show All Ingredients (18 Total)';
+    ingredientsExpanded = false;
+    // Scroll back to ingredients section
+    document.getElementById('ingredientsGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 };
 
