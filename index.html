@@ -11,30 +11,29 @@
     h1 { font-size: 36px; font-weight: 700; text-align: center; background: linear-gradient(135deg, #fff, #00ff9d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 25px 0; }
     h2 { font-size: 28px; color: #00ff9d; text-align: center; margin: 35px 0 20px; }
     .hindi { font-size: 24px; color: #ff4d4d; text-align: center; font-weight: bold; margin: 15px 0; }
-    .hero { position: relative; text-align: center; padding: 20px 0; }
+    .hero { position: relative; text-align: center; padding: 20px 0; margin-bottom: 30px; }
     .hero .header-bg {
       width: 100%;
       max-width: 480px;
-      border-radius: 20px;
-      box-shadow: 0 0 60px rgba(0,255,157,.6);
+      border-radius: 30px;
+      box-shadow: 0 0 60px rgba(0,255,157,.4);
       display: block;
       margin: 0 auto;
     }
     .hero .product-overlay {
       position: absolute;
-      bottom: 20px;
-      right: 20px;
-      width: 180px;
+      bottom: 30px;
+      right: 30px;
+      width: 200px;
       height: auto;
       border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.8);
-      border: 4px solid rgba(0,255,157,.6);
+      box-shadow: 0 10px 40px rgba(0,0,0,.8);
+      z-index: 2;
     }
     .badge { background: linear-gradient(#1e6f43, #2a8f5a); padding: 15px 30px; border-radius: 50px; display: inline-block; margin: 20px 0; font-weight: bold; font-size: 16px; box-shadow: 0 5px 20px rgba(0,255,157,.4); }
     .urgency { background: #ff0000; padding: 20px; border-radius: 15px; font-size: 20px; font-weight: bold; margin: 30px 0; animation: pulse 1.5s infinite; text-align: center; box-shadow: 0 0 30px rgba(255,0,0,.5); }
     @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); } }
 
-    /* Premium Amazon Button */
     .premium-amazon-btn {
       display: flex;
       align-items: center;
@@ -78,7 +77,7 @@
       opacity: 0.6;
     }
 
-    /* बाकी स्टाइल वैसा ही */
+    .benefits { list-style: none; }
     .benefits li { font-size: 19px; margin: 20px 0; padding-left: 50px; position: relative; }
     .benefits li::before { content: '⚡'; position: absolute; left: 0; font-size: 35px; }
     .results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0; }
@@ -101,7 +100,7 @@
 
 <div class="container">
 
-  <!-- NEW HEADER with Romantic Silhouette Style -->
+  <!-- HEADER with Romantic Intimate Background + Product Overlay -->
   <div class="hero">
     <div style="position: relative;">
       <img src="https://images.pexels.com/photos/4651212/pexels-photo-4651212.jpeg" alt="Romantic Intimate Couple" class="header-bg">
@@ -125,7 +124,105 @@
     </a>
   </div>
 
-  <!-- बाकी सेक्शन वैसा ही रखो (sales proof, benefits, before/after, ingredients, reviews, final-romantic, CTA) -->
+  <!-- SALES PROOF -->
+  <div class="sales-proof">
+    ⭐⭐⭐⭐⭐ 4.9/5 रेटिंग<br>
+    इस महीने 15,000+ बोतलें बिकीं<br>
+    300,000+ खुश पुरुष
+  </div>
+
+  <!-- BENEFITS -->
+  <h2>Durveda के कमाल के फायदे</h2>
+  <p class="hindi">45+ मिनट तक चलें • कठोर इरेक्शन • भरपूर जोश!</p>
+  <ul class="benefits">
+    <li>स्टैमिना 4X बढ़ाएं – रात भर मजा</li>
+    <li>मजबूत इरेक्शन जब चाहें</li>
+    <li>लाइबिडो बढ़ाकर पार्टनर को हमेशा खुश रखें</li>
+    <li>स्ट्रेस खत्म, कॉन्फिडेंस टॉप लेवल</li>
+    <li>100% नेचुरल – पूरी तरह सुरक्षित</li>
+  </ul>
+
+  <a href="https://www.amazon.in/YOUR-PRODUCT-LINK" target="_blank" class="premium-amazon-btn" id="buyBtn2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+    <div class="text">
+      <span class="main">50% ऑफ + फ्री डिस्क्रीट शिपिंग</span>
+      <span class="sub">– अभी ऑर्डर करें!</span>
+    </div>
+  </a>
+
+  <!-- BEFORE/AFTER -->
+  <h2>असली बदलाव देखें</h2>
+  <p class="hindi">Durveda से पहले vs बाद में</p>
+  <div class="results-grid">
+    <div>
+      <img src="https://paramountmensmedical.com/wp-content/uploads/2023/04/Ways-Couples-Can-Overcome-Sexual-Frustration.jpg" alt="Before">
+      <div class="label">पहले: थकान, नाखुशी, कमजोरी</div>
+    </div>
+    <div>
+      <img src="https://media.istockphoto.com/id/1856863035/photo/joyful-hindu-spouses-dancing-in-living-room-interior-at-home-husband-and-wife-enjoying.jpg?s=612x612&w=0&k=20&c=SmkhiEit8_nJNsCmMCFwWYYaSkCgKsml4rkrgTNFK0c=" alt="After">
+      <div class="label">बाद में: जोश, खुशी, फुल एनर्जी</div>
+    </div>
+    <div>
+      <img src="https://www.shutterstock.com/image-photo/offended-couple-after-quarrel-bed-600nw-2484067517.jpg" alt="Before 2">
+      <div class="label">पहले: जल्दी हार, डिसअपॉइंटमेंट</div>
+    </div>
+    <div>
+      <img src="https://www.shutterstock.com/image-photo/energetic-happy-indian-couple-celebrating-260nw-2447946071.jpg" alt="After 2">
+      <div class="label">बाद में: कॉन्फिडेंस, रोमांस</div>
+    </div>
+  </div>
+
+  <!-- INGREDIENTS -->
+  <h2>पावरफुल आयुर्वेदिक सामग्री</h2>
+  <div class="ingredients-grid">
+    <div class="ingredient">
+      <img src="https://www.kerry.com/content/dam/kerry/en/images/insights/kerrydigest/2023/ashwaganha/bigstock-Ginseng-ashwagandha-herb-root-hero-76496183.jpg" alt="Ashwagandha">
+      <p><strong>अश्वगंधा</strong><br>टेस्टोस्टेरोन बढ़ाए, स्ट्रेस कम करे</p>
+    </div>
+    <div class="ingredient">
+      <img src="https://m.media-amazon.com/images/I/71FfGFr+8WL._AC_UF1000,1000_QL80_.jpg" alt="Shilajit">
+      <p><strong>शिलाजीत</strong><br>एनर्जी और स्टैमिना बूस्ट</p>
+    </div>
+    <div class="ingredient">
+      <img src="https://i.ebayimg.com/images/g/JmcAAOSwxs1fQUyC/s-l400.jpg" alt="Safed Musli">
+      <p><strong>सफेद मूसली</strong><br>लाइबिडो और पावर बढ़ाए</p>
+    </div>
+    <div class="ingredient">
+      <img src="https://cdn.freepixel.com/preview/free-photos-passionate-in-love-indian-couple-embrace-and-kiss-at-intimate-moment-photo-a-tender-moment-between-a-preview-1004147484.jpg" alt="More">
+      <p><strong>और प्रीमियम जड़ी-बूटियाँ</strong><br>पूर्ण शक्ति के लिए</p>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <h2>असली ग्राहकों की राय</h2>
+  <div class="review">
+    <div class="stars">★★★★★</div>
+    <p>"20 दिन में कमाल! अब पूरी रात एनर्जी, बीवी सुपर खुश 😍"</p>
+    <p><strong>— अंकित, मुंबई</strong></p>
+  </div>
+  <div class="review">
+    <div class="stars">★★★★★</div>
+    <p>"नेचुरल और पावरफुल। कॉन्फिडेंस वापस आ गया!"</p>
+    <p><strong>— रवि, दिल्ली</strong></p>
+  </div>
+  <div class="review">
+    <div class="stars">★★★★★</div>
+    <p>"पहले जल्दी थक जाता था, अब 45+ मिनट आसानी से। बेस्ट प्रोडक्ट!"</p>
+    <p><strong>— विक्रम, बैंगलोर</strong></p>
+  </div>
+
+  <!-- LAST ROMANTIC IMAGE -->
+  <div class="final-romantic">
+    <img src="https://static.vecteezy.com/system/resources/previews/051/804/569/large_2x/happy-multiethnic-loving-romantic-couple-family-arabian-indian-man-hispanic-woman-smile-cuddle-touching-male-boyfriend-female-girlfriend-hug-relaxing-on-date-together-embrace-in-nature-park-outdoors-photo.jpg" alt="Happy Romantic Couple">
+  </div>
+
+  <a href="https://www.amazon.in/YOUR-PRODUCT-LINK" target="_blank" class="premium-amazon-btn" id="buyBtn3">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+    <div class="text">
+      <span class="main">50% ऑफ + फ्री डिस्क्रीट शिपिंग</span>
+      <span class="sub">– अभी ऑर्डर करें!</span>
+    </div>
+  </a>
 
 </div>
 
@@ -140,7 +237,41 @@
   </a>
 </div>
 
-<!-- Countdown Script वैसा ही -->
+<script>
+// आज रात 11:59:59 PM तक काउंटडाउन
+const offerEnd = new Date();
+offerEnd.setHours(23, 59, 59, 999);
+
+function updateCountdown() {
+  const now = new Date();
+  const distance = offerEnd - now;
+
+  if (distance < 0) {
+    document.getElementById('countdown').innerHTML = "ऑफर खत्म हो गया!";
+    ['buyBtn', 'buyBtn2', 'buyBtn3', 'stickyBtn'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) btn.classList.add('disabled');
+    });
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  let text = "";
+  if (days > 0) text += days + " दिन ";
+  text += hours.toString().padStart(2, '0') + ":" +
+          minutes.toString().padStart(2, '0') + ":" +
+          seconds.toString().padStart(2, '0');
+
+  document.getElementById('countdown').innerHTML = "बाकी समय: " + text;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
 
 </body>
 </html>
