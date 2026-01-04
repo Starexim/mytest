@@ -331,14 +331,333 @@
 <script>
 // Reviews Data (add more here)
 const allReviews = [
-  { photo: "https://randomuser.me/api/portraits/men/32.jpg", name: "Ankit, Mumbai", stars: 5, text: "Amazing results in 20 days! Full night energy, wife super happy 😍" },
-  { photo: "https://randomuser.me/api/portraits/men/45.jpg", name: "Ravi, Delhi", stars: 5, text: "Natural and powerful. Confidence is back!" },
-  { photo: "https://randomuser.me/api/portraits/men/68.jpg", name: "Vikram, Bangalore", stars: 5, text: "Used to tire quickly, now easily 45+ minutes. Best product!" },
-  { photo: "https://randomuser.me/api/portraits/men/12.jpg", name: "Sanjay, Chennai", stars: 5, text: "Stamina boosted 4X. Highly recommend!" },
-  { photo: "https://randomuser.me/api/portraits/men/23.jpg", name: "Karan, Kolkata", stars: 5, text: "Partner is super satisfied now!" },
-  { photo: "https://randomuser.me/api/portraits/men/34.jpg", name: "Arjun, Hyderabad", stars: 5, text: "Rock hard every time. Best investment!" },
-  { photo: "https://randomuser.me/api/portraits/men/56.jpg", name: "Rohit, Pune", stars: 5, text: "No side effects, full natural power!" },
-  { photo: "https://randomuser.me/api/portraits/men/78.jpg", name: "Deepak, Ahmedabad", stars: 5, text: "Confidence level max now!" },
+	{
+	  photo: "review/Reviews1.webp",
+	  name: "Rohit, Delhi",
+	  stars: 5,
+	  text: "20–25 din me noticeable improvement dikha. Energy aur confidence dono better hue."
+	},
+	{
+	  photo: "review/Reviews2.webp",
+	  name: "Amit, Pune",
+	  stars: 4,
+	  text: "Regular use helped improve my stamina and overall confidence. Feels natural and safe."
+	},
+	{
+	  photo: "review/Reviews3.webp",
+	  name: "Sandeep, Jaipur",
+	  stars: 5,
+	  text: "इस प्रोडक्ट के इस्तेमाल से ऊर्जा और आत्मविश्वास में साफ फर्क महसूस हुआ।"
+	},
+	{
+	  photo: "review/Reviews4.webp",
+	  name: "Vikas, Kolkata",
+	  stars: 4,
+	  text: "Side effect nahi dikha. Dheere-dheere result milta hai par kaafi effective hai."
+	},
+	{
+	  photo: "review/Reviews5.webp",
+	  name: "Manoj, Indore",
+	  stars: 5,
+	  text: "Very satisfied with the results. Energy level improved and overall performance feels better."
+	},
+	{
+	  photo: "review/Reviews6.webp",
+	  name: "Kunal, Ahmedabad",
+	  stars: 4,
+	  text: "Natural ingredients hone ki wajah se trust bana. Regular use se fark dikhta hai."
+	},
+	{
+	  photo: "review/Reviews7.webp",
+	  name: "Rakesh, Patna",
+	  stars: 5,
+	  text: "इस प्रोडक्ट ने मेरी रोज़मर्रा की एनर्जी और कॉन्फिडेंस को बेहतर किया है।"
+	},
+	{
+	  photo: "review/Reviews8.webp",
+	  name: "Deepak, Noida",
+	  stars: 4,
+	  text: "Packaging achhi thi aur use karna easy laga. Result thoda time leta hai."
+	},
+	
+	{
+	  photo: "review/Reviews10.webp",
+	  name: "Nitin, Bhopal",
+	  stars: 4,
+	  text: "काफी समय बाद ऐसा प्रोडक्ट मिला जो सच में असर दिखाता है। मैं संतुष्ट हूँ।"
+	},
+	{
+	  photo: "review/Reviews11.webp",
+	  name: "Arjun, Gurugram",
+	  stars: 5,
+	  text: "After few weeks of use, I feel more energetic and confident. Overall experience very good."
+	},
+	{
+	  photo: "review/Reviews12.webp",
+	  name: "Pankaj, Kanpur",
+	  stars: 4,
+	  text: "Is product se stamina aur focus me improvement mehsoos hua."
+	},
+	{
+	  photo: "review/Reviews13.webp",
+	  name: "Sunil, Udaipur",
+	  stars: 5,
+	  text: "इस प्रोडक्ट ने मेरी ऊर्जा और आत्मविश्वास दोनों को बेहतर किया है।"
+	},
+	{
+	  photo: "review/Reviews14.webp",
+	  name: "Rahul, Faridabad",
+	  stars: 4,
+	  text: "Natural ingredients hone ki wajah se use karna safe laga."
+	},
+	{
+	  photo: "review/Reviews15.webp",
+	  name: "Imran, Hyderabad",
+	  stars: 5,
+	  text: "Very good men’s wellness product. Gradual but noticeable results."
+	},
+	{
+	  photo: "review/Reviews16.webp",
+	  name: "Gopal, Gwalior",
+	  stars: 4,
+	  text: "Side effect bilkul nahi dikha. Daily routine me easy fit ho jata hai."
+	},
+	{
+	  photo: "review/Reviews17.webp",
+	  name: "Mahesh, Nashik",
+	  stars: 5,
+	  text: "काफी समय बाद ऐसा प्रोडक्ट मिला जो सच में असर दिखाता है।"
+	},
+	{
+	  photo: "review/Reviews18.webp",
+	  name: "Anil, Ranchi",
+	  stars: 4,
+	  text: "Energy level pehle se better feel ho raha hai."
+	},
+	{
+	  photo: "review/Reviews19.webp",
+	  name: "Sanjay, Meerut",
+	  stars: 5,
+	  text: "Product quality achhi hai aur result bhi positive mile."
+	},
+	{
+	  photo: "review/Reviews21.webp",
+	  name: "Dinesh, Alwar",
+	  stars: 5,
+	  text: "इसका असर धीरे-धीरे दिखा लेकिन काफ़ी अच्छा रहा।"
+	},
+	{
+	  photo: "review/Reviews22.webp",
+	  name: "Vivek, Raipur",
+	  stars: 4,
+	  text: "Packaging discreet thi aur delivery smooth rahi."
+	},
+	{
+	  photo: "review/Reviews23.webp",
+	  name: "Harish, Jodhpur",
+	  stars: 5,
+	  text: "Regular use se stamina aur confidence dono improve hue."
+	},
+	{
+	  photo: "review/Reviews24.webp",
+	  name: "Naveen, Mysuru",
+	  stars: 4,
+	  text: "Results instant nahi hain par consistent hain."
+	},
+	
+	{
+	  photo: "review/Reviews26.webp",
+	  name: "Akhilesh, Ballia",
+	  stars: 4,
+	  text: "Natural formula hone ki wajah se trust bana."
+	},
+	{
+	  photo: "review/Reviews27.webp",
+	  name: "Joseph, Kochi",
+	  stars: 5,
+	  text: "Feels effective and well balanced. Satisfied with the product."
+	},
+
+	{
+	  photo: "review/Reviews29.webp",
+	  name: "Ashok, Sikar",
+	  stars: 5,
+	  text: "Confidence level kaafi improve hua hai."
+	},
+	{
+	  photo: "review/Reviews30.webp",
+	  name: "Tushar, Thane",
+	  stars: 4,
+	  text: "Overall experience positive raha. No complaints."
+	},
+	{
+	  photo: "review/Reviews31.webp",
+	  name: "Ramesh, Varanasi",
+	  stars: 5,
+	  text: "Regular use se energy aur confidence dono me clearly improvement mehsoos hua."
+	},
+
+	{
+	  photo: "review/Reviews33.webp",
+	  name: "Harpreet Singh, Ludhiana",
+	  stars: 5,
+	  text: "Kaafi time baad aisa product mila jo dheere-dheere sahi result deta hai."
+	},
+	{
+	  photo: "review/Reviews34.webp",
+	  name: "Joseph, Mangalore",
+	  stars: 4,
+	  text: "Good men’s wellness product. Results are gradual but consistent."
+	},
+	{
+	  photo: "review/Reviews35.webp",
+	  name: "Anwar, Aligarh",
+	  stars: 5,
+	  text: "Is product se energy aur confidence dono better hue. Overall satisfied."
+	},
+	{
+	  photo: "review/Reviews36.webp",
+	  name: "Suresh, Tirupati",
+	  stars: 4,
+	  text: "Side effect nahi dikha. Daily routine me easily adjust ho gaya."
+	},
+	
+	{
+	  photo: "review/Reviews38.webp",
+	  name: "Salman, Bhopal",
+	  stars: 4,
+	  text: "Packaging discreet thi aur product ka effect positive laga."
+	},
+	{
+	  photo: "review/Reviews39.webp",
+	  name: "Mahadev, Ujjain",
+	  stars: 5,
+	  text: "इस प्रोडक्ट से मेरी ऊर्जा और आत्मविश्वास में साफ़ फर्क पड़ा।"
+	},
+
+	{
+	  photo: "review/Reviews41.webp",
+	  name: "Faisal, Moradabad",
+	  stars: 5,
+	  text: "Use karne ke baad overall performance me noticeable improvement dikha."
+	},
+	{
+	  photo: "review/Reviews42.webp",
+	  name: "Prakash, Coimbatore",
+	  stars: 4,
+	  text: "Natural ingredients hone ki wajah se trust bana."
+	},
+	{
+	  photo: "review/Reviews43.webp",
+	  name: "Baljeet Singh, Karnal",
+	  stars: 5,
+	  text: "Men’s wellness ke liye kaafi useful product hai."
+	},
+	{
+	  photo: "review/Reviews44.webp",
+	  name: "Nadeem, Saharanpur",
+	  stars: 4,
+	  text: "Energy level pehle se better feel ho raha hai."
+	},
+	{
+	  photo: "review/Reviews45.webp",
+	  name: "Arvind, Gaya",
+	  stars: 5,
+	  text: "काफी समय बाद ऐसा प्रोडक्ट मिला जो सच में असर दिखाता है।"
+	},
+
+	{
+	  photo: "review/Reviews48.webp",
+	  name: "Kartar Singh, Bathinda",
+	  stars: 4,
+	  text: "Daily routine ke saath easily fit ho jata hai."
+	},
+	{
+	  photo: "review/Reviews49.webp",
+	  name: "Narayan, Madurai",
+	  stars: 5,
+	  text: "Is product ne meri daily energy aur focus ko better kiya."
+	},
+	
+	{
+	  photo: "review/Reviews51.webp",
+	  name: "Vinod, Nagpur",
+	  stars: 5,
+	  text: "Regular use se energy aur confidence dono me clear improvement mehsoos hua."
+	},
+	{
+	  photo: "review/Reviews52.webp",
+	  name: "Zahid, Bareilly",
+	  stars: 4,
+	  text: "Product natural laga aur stamina support ke liye theek hai."
+	},
+	{
+	  photo: "review/Reviews53.webp",
+	  name: "Paramjit Singh, Hoshiarpur",
+	  stars: 5,
+	  text: "Daily routine ch add karan naal overall energy vich improvement aayi."
+	},
+	{
+	  photo: "review/Reviews54.webp",
+	  name: "Thomas, Kottayam",
+	  stars: 4,
+	  text: "Good men’s wellness support. Results are gradual but consistent."
+	},
+	{
+	  photo: "review/Reviews55.webp",
+	  name: "Raghav, Mathura",
+	  stars: 5,
+	  text: "इस प्रोडक्ट से रोज़मर्रा की ऊर्जा और आत्मविश्वास बेहतर हुआ।"
+	},
+	{
+	  photo: "review/Reviews56.webp",
+	  name: "Irfan, Sambhal",
+	  stars: 4,
+	  text: "Side effect nahi dikha. Regular use se positive feel aati hai."
+	},
+	{
+	  photo: "review/Reviews57.webp",
+	  name: "Kuldeep Singh, Sirsa",
+	  stars: 5,
+	  text: "Natural formula hone ki wajah se trust bana aur result bhi sahi mile."
+	},
+	{
+	  photo: "review/Reviews58.webp",
+	  name: "Arun, Tirunelveli",
+	  stars: 4,
+	  text: "Use karna easy hai aur body pe light feel hota hai."
+	},
+	{
+	  photo: "review/Reviews59.webp",
+	  name: "Nawaz, Siwan",
+	  stars: 5,
+	  text: "Energy level pehle se better laga. Overall experience achha raha."
+	},
+	{
+	  photo: "review/Reviews60.webp",
+	  name: "Rohinder Singh, Ropar",
+	  stars: 4,
+	  text: "Result instant nahi par long term ke liye suitable hai."
+	},
+	
+	{
+	  photo: "review/Reviews62.webp",
+	  name: "Faizan, Shahjahanpur",
+	  stars: 4,
+	  text: "Packaging discreet thi aur delivery smooth rahi."
+	},
+	{
+	  photo: "review/Reviews63.webp",
+	  name: "Hardeep Singh, Moga",
+	  stars: 5,
+	  text: "Regular use naal confidence te stamina vich improvement aayi."
+	},
+	{
+	  photo: "review/Reviews64.webp",
+	  name: "Praveen, Hubballi",
+	  stars: 4,
+	  text: "Natural ingredients hone ki wajah se use safe laga."
+	},
 ];
 
 // Load More Logic
